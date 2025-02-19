@@ -2,11 +2,7 @@ import numpy as np
 import subprocess
 import sys
 
-try:
-    import scipy
-except ModuleNotFoundError:
-    subprocess.run([sys.executable, "-m", "pip", "install", "scipy"])
-    import scipy
+from scipy.stats import norm
 
 import streamlit as st
 
